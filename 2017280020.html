@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>2017280020</title>
+  </head>
+<body  bgcolor=lightyellow> 
+		<h2><p>-2019 Güz Döneminin ilk ödevi by EMRE DÜBEK 2017280020-</h2> 
+		<p><b>LÜTFEN SADECE SAYI GİRİNİZ..!</b><p>
+		<label for="id4">Metin kutusu 1</label> 
+	<input type="text" id="id1" />  
+<br> 
+		<label for="id5">Metin kutusu 2</label> 
+		<input type="text" id="id2" />  
+		
+<br><br> 
+			<button type="button"  id="topla">Topla</button> <!-- " window.alert(toplam)" -->
+<br><br> 
+<p><b>BURAYA HARF DE GİRİLEBİLİR..!</b><p>
+		<label for="id6">Metin kutusu 3</label> 
+		<input type="text" id="id3" />  
+<br> 
+		<label for="id7">Metin kutusu 4</label> 
+	<input type="text" id="id4" />  
+<br><br> 
+	<button type="button"  id="yapistir" >BİRLEŞTİR</button><!-- " window.alert(birles)" -->
+<script>
+	var topla=document.getElementById("topla");//.innerHTML
+            topla.onclick=function(){
+                var sayi1=Number(document.getElementById("id1").value);
+                var sayi2=Number(document.getElementById("id2").value);
+			//	if(sayi1=="" && isNaN(sayi1)){ 
+				//window.alert("sayı  degil");}
+				//else{
+                var toplam=sayi1+sayi2;
+                window.alert(toplam);
+            }
+	var birles=	document.getElementById("yapistir");//.innerHTML
+			birles.onclick=function(){
+				var metin1=(document.getElementById("id3").value);
+				var metin2=(document.getElementById("id4").value);
+				var birlestir=metin1+""+metin2;
+				window.alert(birlestir);
+			
+			}
+			
+			</script>
+	
+<!-- YARARLANDIĞIM KAYNAKLAR: https://www.yazilimkodlama.com , https://yazilimcity.net . -->
+	
+</body> 
+</html> 
